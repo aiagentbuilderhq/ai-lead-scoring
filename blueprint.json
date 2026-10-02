@@ -1,0 +1,12 @@
+{
+  "name": "AI Lead Scoring \u2014 Apollo + Hunter + Gemini + MCP \u2014 API Orchestration",
+  "description": "Apollo API + Hunter API \u2192 Sheets API \u2192 Gemini API (MCP) scoring \u2192 Sheets API update \u2192 Schedule \u2192 Gmail API digest",
+  "modules": [
+    "Google Sheets: Watch New Rows (Sheets API)",
+    "Gemini: Score 1-10 vs ICP (Gemini API + MCP)",
+    "Google Sheets: Update Row (Sheets API)",
+    "Schedule: Daily 7:30 AM (Cron)",
+    "Gmail: Send Digest (Gmail API)"
+  ],
+  "note": "Prompt: 'You are lead qualifier. ICP: US e-commerce <50 staff, founder-led. Score lead 1-10. Name: {{Name}} Company: {{Company}} Website: {{Website}} Notes: {{Notes}} Output ONLY: SCORE: X/10 | REASON: 1 line'. 5 APIs in one workflow."
+}
